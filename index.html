@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Encuesta sobre la inclusion tecnologica</title>
+  <title>Encuesta sobre la inclusión tecnológica</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
     <header class="header">
-      <h1 class="text-center">Encuesta sobre la inclusion tecnologica</h1>
+      <h1 class="text-center">Encuesta sobre la inclusión tecnológica</h1>
       <p class="description text-center">Gracias por ayudarme con mi tarea :).</p>
     </header>
     <form id="survey-form">
@@ -77,7 +77,7 @@
         </select>
       </div>
       <div class="form-group">
-        <p>Comentarios o sugerencias para el desarrollador?(Si no tienes escribe no)</p>
+        <p>Comentarios o sugerencias para el desarrollador? (Si no tienes escribe no)</p>
         <textarea id="comments" name="comments" class="input-textarea" placeholder="Escribe tus comentarios aquí..."></textarea>
       </div>
       <div class="form-group">
@@ -93,8 +93,16 @@
     <p class="address">Todos los derechos reservados</p>
   </footer>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
-
+  <!-- Nuevo SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "SdrJASKpiRyGX1hq5", // Tu User ID
+      });
+    })();
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
+
