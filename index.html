@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta sobre la inclusion tecnologica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="text-center">Encuesta sobre la inclusion tecnologica</h1>
+      <p class="description text-center">Gracias por ayudarme con mi tarea :).</p>
+    </header>
+    <form id="survey-form">
+      <!-- Preguntas -->
+      <div class="form-group">
+        <p>¿Cuentas con algún tipo de acceso a internet? ¿Cuál?</p>
+        <select id="internet-access" name="internetAccess" class="form-control" required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="no">No</option>
+          <option value="movil">Sí, por red móvil</option>
+          <option value="fijo">Sí, por proveedor de internet fijo</option>
+          <option value="ambos">Sí, por red móvil e internet fijo</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>¿Todos los integrantes de tu familia mayores de 5 años cuentan con un dispositivo móvil propio?</p>
+        <label><input type="radio" name="familyDevices" value="si" required> Sí</label>
+        <label><input type="radio" name="familyDevices" value="no"> No</label>
+      </div>
+      <div class="form-group">
+        <p>¿Cómo describirías la calidad de tu servicio en telefonía?</p>
+        <select id="phone-service-quality" name="phoneServiceQuality" class="form-control" required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="excelente">Excelente</option>
+          <option value="bueno">Bueno, pero con problemas de conexión/poca cobertura</option>
+          <option value="regular">Regular</option>
+          <option value="malo">Malo</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>¿Cómo describirías la calidad de tu servicio de internet fijo?</p>
+        <select id="internet-quality" name="internetQuality" class="form-control" required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="excelente">Excelente</option>
+          <option value="bueno">Bueno, pero con conexión inestable y/o poco alcance</option>
+          <option value="regular">Regular</option>
+          <option value="malo">Malo</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>¿La familia con la que vives cuenta con equipos de computación?</p>
+        <label><input type="radio" name="computers" value="si" required> Sí</label>
+        <label><input type="radio" name="computers" value="no"> No</label>
+      </div>
+      <div class="form-group">
+        <p>¿Con qué compañía de telefonía móvil contratas tus servicios?</p>
+        <select id="phone-company" name="phoneCompany" class="form-control" required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="telcel">TELCEL</option>
+          <option value="movistar">Movistar</option>
+          <option value="att">AT&T o Unefon</option>
+          <option value="bait">BAIT o dependientes de la Red Altan</option>
+          <option value="omv">OMV dependiente de AT&T o Freedom Pop (RediCoppel, OXXO CEL, etc.)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>¿Con qué compañía de internet fijo contratas tus servicios?</p>
+        <select id="internet-company" name="internetCompany" class="form-control" required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="megacable">Megacable</option>
+          <option value="telmex">Telmex (Infinitum)</option>
+          <option value="totalplay">TotalPlay</option>
+          <option value="izzi">IZZI</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Comentarios o sugerencias para el desarrollador?(Si no tienes escribe no)</p>
+        <textarea id="comments" name="comments" class="input-textarea" placeholder="Escribe tus comentarios aquí..."></textarea>
+      </div>
+      <div class="form-group">
+        <button type="button" id="submit" class="submit-button">Enviar</button>
+      </div>
+    </form>
+  </div>
+  
+  <footer>
+    <p>Creado por Luis Angel (Estudiante de programación de 
+      <a href="https://www.freecodecamp.org" target="_blank">Freecodecamp.org</a>)
+    </p>
+    <p class="address">Todos los derechos reservados</p>
+  </footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
